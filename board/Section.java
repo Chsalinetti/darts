@@ -1,16 +1,15 @@
 package board;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Section {
     private static final List<Integer> IS_BLACK = Arrays.asList(2, 3, 7, 8, 10, 12, 13, 14, 18, 20);
     //points
-    private int points;
+    private int points; //point value of section
     //location
-    private int number;
-    private String name;
+    private int number; // order on the dartboard
+    private String name; // name of the location
     //color
     private String color; //black or white
     //status
@@ -37,6 +36,26 @@ public class Section {
             this.name = "Bullseye";
             this.color = null;
         }
+    }
+    /**
+     * returns the points recieved from hitting the section
+     * @param multiplier 1, 2, or 3 depending on location hit
+     * @return points recieved
+     */
+    public int hitSectiontPoints(int multiplier) {
+        return points * multiplier;
+    }
+    public int getPoints() {
+        return points;
+    }
+    public int getNumber() {
+        return number;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getColor() {
+        return color;
     }
 
 }
