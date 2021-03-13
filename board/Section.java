@@ -39,6 +39,10 @@ public class Section {
             this.color = null;
         }
     }
+    @Override
+    public String toString() {
+        return name;
+    }
     /**
      * returns the points recieved from hitting the section
      * @param multiplier 1, 2, or 3 depending on location hit
