@@ -2,7 +2,9 @@ package board;
 
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * Creates individual section on dartboard
+ */
 public class Section {
     private static final List<Integer> IS_BLACK = Arrays.asList(2, 3, 7, 8, 10, 12, 13, 14, 18, 20);
     //points
